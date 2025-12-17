@@ -354,6 +354,11 @@
     block-size: 28px;
   }
 
+  .modal__floppy {
+    inline-size: 56px;
+    block-size: 56px;
+  }
+
   .modal[open] {
     padding-inline: 40px;
   }
