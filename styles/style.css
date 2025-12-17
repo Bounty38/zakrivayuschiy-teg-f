@@ -89,7 +89,6 @@
   line-height: 100%;
   inset-block-start: 25px;
   inset-inline-end: 25px;
-  -webkit-text-stroke: 1px #fff;
   text-shadow: -1px 0 var(--text-stroke-color, #fff),
     0 1px var(--text-stroke-color, #fff), 1px 0 var(--text-stroke-color, #fff),
     0 -1px var(--bg-color);
@@ -142,11 +141,6 @@
 }
 
 .card__like-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
   block-size: 38px;
   inline-size: 130px;
 }
@@ -156,6 +150,11 @@
   transition: box-shadow 0.3s ease;
   overflow: hidden;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
 }
 
 .button::before {
@@ -182,14 +181,9 @@
 }
 
 .save__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
   margin: auto;
-  border: 2px solid var(--main-color);
   padding: 17px 20px;
-  background: var(--bg-color);
   margin-block-end: 100px;
 }
 
@@ -306,26 +300,15 @@
 }
 
 .modal__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
-  cursor: pointer;
   text-transform: uppercase;
   padding-block: 12.5px;
-  transition: box-shadow 0.3s ease;
 }
 
-.card__like-button:focus,
-.save__button:focus,
-.modal__button:focus {
+.button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible,
-.save__button:focus-visible,
-.modal__button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--main-color);
 }
 
