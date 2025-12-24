@@ -1,10 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: 'Inter-Variable', sans-serif;
-  --accent-font: 'PressStart2P', monospace;
+  --main-font: 'Inter-Variable', Arial, sans-serif;
+  --accent-font: 'PressStart2P', 'Courier New', courier, fantasy;
   --font-weight: 410;
   --font-weight-bold: 715;
+  --title-font-weight: 700;
+  --text-font-weight: 400;
+  --accent-color: #000000;
   --main-color: #000;
   --bg-color: #fff;
   --text-stroke-color: #fff;
@@ -18,4 +21,46 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --animation-fill-color: red;
+}
+
+:root.theme-light,
+html.theme-light {
+  --accent-color: rgba(0, 0, 0, 1);
+  --main-color: #000000;
+  --bg-color: #ffffff;
+  --text-stroke-color: rgba(255 255 255 / 50%);
+  --mix-blend-color: #ffffff;
+  --bg-image: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --animation-fill-color: #ff0000;
+}
+
+:root.theme-dark,
+html.theme-dark {
+  --accent-color: rgba(0, 204, 20, 1);
+  --main-color: #00cc14;
+  --bg-color: #000000;
+  --text-stroke-color: rgba(0 0 0 / 50%);
+  --mix-blend-color: #00cc14;
+  --bg-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+  /* keep animation (like) color red even in dark theme */
+  --animation-fill-color: #ff0000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  html {
+    --accent-color: rgba(0, 204, 20, 1);
+    --main-color: #00cc14;
+    --bg-color: #000000;
+    --text-stroke-color: rgba(0 0 0 / 50%);
+    --mix-blend-color: #00cc14;
+    --bg-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+      linear-gradient(#007f0c, #004306);
+    --animation-fill-color: #ff0000;
+  }
 }

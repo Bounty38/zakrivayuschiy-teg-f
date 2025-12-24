@@ -20,8 +20,21 @@
   <body class="page">
 
     <header class="header container">
-      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
-      <h1 class="header__title">Закрывающий тег</h1>
+      <a href="#" class="header__title">&lt;/HTML&gt;</a>
+      <h1 class="header__text">Закрывающий тег</h1>
+      <nav class="theme-menu header__theme-menu" aria-label="Theme switcher">
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" type="button" data-theme="dark">темно</button>
+          </li>
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" type="button" data-theme="auto" disabled>авто</button>
+          </li>
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" type="button" data-theme="light">светло</button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="container">
@@ -46,7 +59,7 @@
             знания могут повлиять на ваше будущее.
           </p>
 
-          <p class="card__content-text">Место для ваших воспоминаний о начале обучения.</p>
+          <p class="card__content-text"></p>
 
           <div class="card__buttons">
             <button type="button" class="card__icon-button" aria-hidden="true">
@@ -115,7 +128,7 @@
             а вдруг будет слишком сложно? что, если я не справлюсь?
           </p>
 
-          <p class="card__content-text">Место для ваших воспоминаний о начале первого спринта.</p>
+          <p class="card__content-text"></p>
 
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
@@ -181,7 +194,7 @@
             наоборот, могли вдохновиться успехами и поверить в себя.
           </p>
 
-          <p class="card__content-text">Место для ваших воспоминаний об окончании первого спринта.</p>
+          <p class="card__content-text"></p>
 
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
@@ -245,9 +258,7 @@
             подвержены перфекционизму и вместо того, чтобы сделать идеально,
             старались просто сделать.
           </p>
-          <p class="card__content-text">
-            Место для ваших воспоминаний о начале второго спринта.
-          </p>
+          <p class="card__content-text"></p>
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
               <svg
@@ -307,9 +318,7 @@
             Осваивать что-то новое легче, когда рядом есть единомышленники, не
             правда ли?
           </p>
-          <p class="card__content-text">
-            Место для ваших воспоминаний об окончании второго спринта.
-          </p>
+          <p class="card__content-text"></p>
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
               <svg
@@ -366,9 +375,7 @@
             вам могло показаться, что решения просто иссякли. Значит, пришло
             время посмотреть на задачу под другим углом.
           </p>
-          <p class="card__content-text">
-            Место для ваших воспоминаний о начале третьего спринта.
-          </p>
+          <p class="card__content-text"></p>
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
               <svg
@@ -427,9 +434,7 @@
             В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
           </p>
-          <p class="card__content-text">
-            Место для ваших воспоминаний об окончании третьего спринта.
-          </p>
+          <p class="card__content-text"></p>
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
               <svg
@@ -489,10 +494,7 @@
             это тот случай, когда важен сам процесс познания. Ведь часто путь —
             и есть результат.
           </p>
-          <p class="card__content-text">
-            Место, чтобы остановиться, подумать и написать, что вы чувствуете в
-            этой точке пути.
-          </p>
+          <p class="card__content-text"></p>
           <div class="card__buttons">
             <button type="button" class="card__icon-button">
               <svg
@@ -562,6 +564,7 @@
       </dialog>
       
     </main>
+    <script src="./scripts/theme.js"></script>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
