@@ -90,8 +90,12 @@
 }
 
 @keyframes move-arrow {
-  from { left: -12px; }
-  to { left: -22px; }
+  from {
+    left: -12px;
+  }
+  to {
+    left: -22px;
+  }
 }
 
 .theme-menu__button::after {
@@ -400,10 +404,6 @@
   padding: 30px;
   block-size: 191px;
   inline-size: 353px;
-}
-
-/* Ensure dialog visual matches current theme variables */
-.modal[open] {
   background-color: var(--bg-color);
   color: var(--accent-color);
   border: 6px solid var(--main-color);
